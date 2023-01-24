@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">PlasticUpdates</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="login">Sign In</string>
+    <string name="newuser"><font color="#FF000000">Don\'t have an account?</font> <font color="#8BB22C">Register</font></string>
+    <string name="existinguser"><font color="#FF000000">Already have an account?</font> <font color="#FFFFFFFF">Login</font></string>
+    <!--  <string name="newuser">Don\'t have an Account? Register</string>
+    <string name="existinguser">Already have an account? Login</string>-->
+    <string name="sign_up1">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="company_name">Company Name</string>
+    <string name="company_addr">Company Address</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="city">City</string>
+    <string name="phone">Business Phone</string>
+    <string name="cphone">Company Phone</string>
+    <string name="password">Password</string>
+    <string name="chpassword">Change Password</string>
+    <string name="cpassword">Confirm Password</string>
+    <string name="npassword">New Password</string>
+    <string name="cnpassword">Confirm New Password</string>
+    <string name="dept">Department*</string>
+    <string name="job">Job Function*</string>
+    <string name="turnover">Yearly Turnover(in USD)*</string>
+    <string name="categ">Company Category*</string>
+    <string name="update">Update Profile</string>
+    <string name="pdeal">Which Product Do You Deal In?*</string>
+    <string name="impex">Import/Export?*</string>
+    <string name="impot">Do you import material?</string>
+    <string name="expot">Do you export material?</string>
+    <string name="buysell">Do you buy/sell material locally?</string>
+    <string name="none">None of the above</string>
+    <string name="global_news">Global News</string>
+    <string name="breaking_news">Breaking News</string>
+    <string name="services">Our Services</string>
+    <string name="events">Events</string>
+    <string name="consumption">What Is Your Monthly Polymer Consumption?</string>
+    <string name="below">Below 100MT</string>
+    <string name="between">Between 100MT to 300MT</string>
+    <string name="above">Above 500MT</string>
+    <string name="betto">Between 300MT to 500MT</string>
+
+
+
+
+</resources>
