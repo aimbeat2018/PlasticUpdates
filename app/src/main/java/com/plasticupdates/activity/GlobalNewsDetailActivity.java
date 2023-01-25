@@ -7,26 +7,26 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.plasticupdates.MainActivity;
 import com.plasticupdates.R;
-import com.plasticupdates.databinding.ActivityEditProfileBinding;
+import com.plasticupdates.databinding.ActivityGlobalNewsDetailBinding;
 
-public class EditProfileActivity extends AppCompatActivity {
-    ActivityEditProfileBinding editProfileBinding;
+public class GlobalNewsDetailActivity extends AppCompatActivity {
+    ActivityGlobalNewsDetailBinding globalNewsDetailBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        editProfileBinding = DataBindingUtil.setContentView(this,R.layout.activity_edit_profile);
+
+        globalNewsDetailBinding = DataBindingUtil.setContentView(this,R.layout.activity_global_news_detail);
         getSupportActionBar().hide();
-        editProfileBinding.btnUpdate.setOnClickListener(new View.OnClickListener() {
+        globalNewsDetailBinding.imgShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(EditProfileActivity.this, MainActivity.class);
+                Intent intent = new Intent(GlobalNewsDetailActivity.this, LoginActivity.class);
                 startActivity(intent);
 
             }
         });
-        editProfileBinding.imgback.setOnClickListener(new View.OnClickListener() {
+        globalNewsDetailBinding.imgback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onBackPressed();

@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="handler"
+            type="com.plasticupdates.activity.EditProfileActivity" />
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activity.EditProfileActivity">
+        >
         <RelativeLayout
             android:id="@+id/rr_banner"
             android:layout_width="match_parent"

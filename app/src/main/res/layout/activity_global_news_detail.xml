@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="handler"
+            type="com.plasticupdates.activity.GlobalNewsDetailActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <RelativeLayout
+            android:id="@+id/rr_banner"
+            android:layout_width="match_parent"
+            android:background="@color/light_main"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/imgback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_baseline_arrow_back_ios_24"
+                android:padding="@dimen/margin_8"
+                android:visibility="visible" />
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/global_news"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imgback"
+                android:textSize="@dimen/text_18" />
+
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rr_banner"
+            android:isScrollContainer="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="@dimen/text_2"
+                    android:id="@+id/img_compnews"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_200"
+                    android:background="@drawable/breaking_news"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:visibility="visible" />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txt_finance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Finance"
+                        android:textColor="@color/red"
+                        android:background="@color/light_red"
+                        android:textSize="@dimen/text_14" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:src="@drawable/ic_baseline_calendar_month_24"
+                        android:tint="@color/gray"
+                        />
+                    <TextView
+                        android:id="@+id/txt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="March 28,2022"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_share"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="@dimen/margin_80"
+                        android:src="@drawable/ic_baseline_share_24"
+
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:id="@+id/txt_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inflation slows in february Amid Falling"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_16" />
+                <TextView
+                    android:id="@+id/txt_detailsnews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Is inflation starting to slow down?
+All told, the latest figures provided the strongest evidence to date that inflation in the United States is steadily slowing from the price acceleration that first struck about 18 months ago and reached a four-decade high earlier this year."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+</layout>

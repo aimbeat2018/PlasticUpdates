@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="25dp"
+    app:cardCornerRadius="@dimen/margin_10">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="@dimen/text_2"
+            android:id="@+id/img_compnews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/breaking_news"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_finance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finance"
+            android:textColor="@color/red"
+            android:background="@color/light_red"
+            android:layout_marginRight="@dimen/margin_40"
+            android:textSize="@dimen/text_10" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_calendar_month_24"
+            android:tint="@color/gray"
+             />
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="March 28,2022"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_10" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            android:id="@+id/txt_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inflation slows in february Amid Falling"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_10" />
+        <TextView
+            android:id="@+id/txt_detailsnews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:text="Is inflation starting to slow down?
+All told, the latest figures provided the strongest evidence to date that inflation in the United States is steadily slowing from the price acceleration that first struck about 18 months ago and reached a four-decade high earlier this year."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_10" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

@@ -63,7 +63,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="40dp"
                                 android:background="@null"
-                                android:hint="@string/first_name"
+                                android:hint="@string/full_name"
                                 android:inputType="textPersonName"
                                 android:paddingHorizontal="10dp"
 
@@ -371,7 +371,7 @@
                     android:orientation="vertical"
                     >
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/login"
+                        android:id="@+id/btn_signup"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/margin_55"
                         android:textSize="@dimen/margin_15"

@@ -18,6 +18,11 @@ public class ChangePasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         changePasswordBinding = DataBindingUtil.setContentView(this,R.layout.activity_change_password);
         getSupportActionBar().hide();
-
+        changePasswordBinding.imgback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
 }

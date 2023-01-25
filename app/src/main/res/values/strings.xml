@@ -7,6 +7,7 @@
     <!--  <string name="newuser">Don\'t have an Account? Register</string>
     <string name="existinguser">Already have an account? Login</string>-->
     <string name="sign_up1">Register</string>
+    <string name="full_name">Full Name</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="email">Email</string>
@@ -41,8 +42,6 @@
     <string name="between">Between 100MT to 300MT</string>
     <string name="above">Above 500MT</string>
     <string name="betto">Between 300MT to 500MT</string>
-
-
 
 
 </resources>
