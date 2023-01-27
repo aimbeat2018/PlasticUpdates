@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.plasticupdates.R;
+import com.plasticupdates.activity.login.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -27,7 +28,7 @@ public class SplashActivity extends AppCompatActivity {
 
                     //  if(SharedPrefrence.getBol(SplashPageActivity.this, SharedPrefrence.isLogin)){
 
-                    Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                     startActivity(intent);
                      /*   finish();
                     }else{

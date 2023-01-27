@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.plasticupdates.MainActivity;
 import com.plasticupdates.R;
+import com.plasticupdates.activity.login.LoginActivity;
 import com.plasticupdates.databinding.ActivityRegisterBinding;
 
 public class RegisterActivity extends AppCompatActivity {

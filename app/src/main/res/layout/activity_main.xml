@@ -64,9 +64,13 @@
                     android:background="@drawable/ic_baseline_notifications_24">
                 </ImageView>
             </RelativeLayout>
-
-
         </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerMain"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@color/light_main"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

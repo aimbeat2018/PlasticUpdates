@@ -5,8 +5,12 @@
 
     <data>
         <variable
-            name="handler"
-            type="com.plasticupdates.activity.LoginActivity" />
+            name="presenter"
+            type="com.plasticupdates.activity.login.LoginContract.Presenter" />
+
+        <variable
+            name="viewModel"
+            type="com.plasticupdates.model.LoginRequestModel" />
     </data>
 
     <RelativeLayout
@@ -46,6 +50,7 @@
                 android:singleLine="true"
                 android:layout_marginLeft="@dimen/margin_25"
                 android:layout_marginRight="@dimen/margin_25"
+                android:text="@={viewModel.email}"
                 android:drawableStart="@drawable/ic_baseline_email_24"
                 android:drawablePadding="10dp"
 
@@ -71,6 +76,7 @@
                 android:layout_marginRight="@dimen/margin_25"
                 android:drawableLeft="@drawable/ic_baseline_lock_24"
                 android:textSize="15dp"
+                android:text="@={viewModel.password}"
                 android:drawablePadding="10dp"
                 />
 
@@ -103,6 +109,7 @@
                 android:layout_marginLeft="@dimen/margin_25"
                 android:layout_gravity="center"
                 android:layout_marginRight="@dimen/margin_25"
+                android:onClick="@{()->presenter.Login(viewModel.email, viewModel.password)}"
                 ></androidx.appcompat.widget.AppCompatButton>
             <TextView
                 android:id="@+id/txt_register"

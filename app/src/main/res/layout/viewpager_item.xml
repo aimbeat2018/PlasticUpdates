@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/margin_5">
+
+    <!-- image viwer to view the images -->
+    <ImageView
+        android:id="@+id/imageViewMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_circle_24"/>
+    <TextView
+        android:id="@+id/txt_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scroll_txt"></TextView>
+</LinearLayout>

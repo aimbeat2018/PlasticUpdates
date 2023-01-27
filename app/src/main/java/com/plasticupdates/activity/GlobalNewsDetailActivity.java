@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.plasticupdates.R;
+import com.plasticupdates.activity.login.LoginActivity;
 import com.plasticupdates.databinding.ActivityGlobalNewsDetailBinding;
 
 public class GlobalNewsDetailActivity extends AppCompatActivity {
