@@ -1,12 +1,14 @@
 package com.plasticupdates.activity.login;
 
+import com.plasticupdates.model.MainModel;
+
 import org.json.JSONObject;
 
 public interface LoginContract {
 
     interface model {
         interface OnFinishedListener {
-            void onFinished(JSONObject jsonObject);
+            void onFinished(MainModel mainModel);
 
             void onFailure(Throwable t);
         }
@@ -23,6 +25,7 @@ public interface LoginContract {
 
         void showError(String error, int forEdit);
 
+        void loginSuccess(MainModel mainModel);
         void onResponseFailure(Throwable throwable);
     }
 

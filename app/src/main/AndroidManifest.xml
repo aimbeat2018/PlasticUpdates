@@ -58,7 +58,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.RegisterActivity"
+            android:name=".activity.register.RegisterActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

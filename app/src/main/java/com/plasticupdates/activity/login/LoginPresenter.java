@@ -9,10 +9,15 @@ import com.plasticupdates.MainActivity;
 import com.plasticupdates.R;
 import com.plasticupdates.constant.SharedPref;
 import com.plasticupdates.model.LoginRequestModel;
+import com.plasticupdates.model.LoginResponseModel;
+import com.plasticupdates.model.MainModel;
 
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoginPresenter implements LoginContract.Presenter, LoginContract.model.OnFinishedListener {
     Context context;
@@ -49,24 +54,14 @@ public class LoginPresenter implements LoginContract.Presenter, LoginContract.mo
 
 
     @Override
-    public void onFinished(JSONObject jsonObject) {
+    public void onFinished(MainModel mainModel) {
         try {
-            String message=jsonObject.getString("message");
-            String code=jsonObject.getString("code");
-            if (code.equals("200")){
-                if (message.equals("User Login Successfully")) {
-                    context.startActivity(new Intent(context, MainActivity.class));
-                    ((Activity) context).finish();
-                    if (view != null) {
-                        view.hideProgress();
-                    }
-                }
-                else
-                {
-                 //   Toast.makeText(getClass(), msg, Toast.LENGTH_SHORT).show();
-                }
+
+            if (view != null) {
+                view.hideProgress();
             }
-        } catch (JSONException e) {
+            view.loginSuccess(mainModel);
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

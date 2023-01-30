@@ -11,6 +11,13 @@ public class LoginRequestModel {
     //    String userId;
     int user_id;
     int category_id;
+    String fname;
+    String lname;
+    String comname;
+    String comphone;
+    String address;
+    String country;
+    String city,state;
 
     public String getEmail() {
         return email;
@@ -91,5 +98,69 @@ public class LoginRequestModel {
 
     public void setCategory_id(int category_id) {
         this.category_id = category_id;
+    }
+
+    public String getFname() {
+        return fname;
+    }
+
+    public void setFname(String fname) {
+        this.fname = fname;
+    }
+
+    public String getLname() {
+        return lname;
+    }
+
+    public void setLname(String lname) {
+        this.lname = lname;
+    }
+
+    public String getComname() {
+        return comname;
+    }
+
+    public void setComname(String comname) {
+        this.comname = comname;
+    }
+
+    public String getComphone() {
+        return comphone;
+    }
+
+    public void setComphone(String comphone) {
+        this.comphone = comphone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
     }
 }

@@ -6,6 +6,7 @@ import static com.plasticupdates.network.RetrofitService.APIKEY;
 
 import android.util.Log;
 
+import com.plasticupdates.model.MainModel;
 import com.plasticupdates.network.ApiClient;
 import com.plasticupdates.network.ApiInterface;
 import com.plasticupdates.network.RetrofitService;
@@ -24,17 +25,17 @@ public class LoginModel implements LoginContract.model {
     @Override
     public void getLogin(OnFinishedListener onFinishedListener, String email, String password) {
         ApiInterface apiService = RetrofitService.createService(ApiInterface.class,"admin","1234");
-        Call<ResponseBody> getLogindetails = apiService.loginUser(APIKEY,email,password);
-        getLogindetails.enqueue(new Callback<ResponseBody>() {
+        Call<MainModel> getLogindetails = apiService.loginUser(APIKEY,email,password);
+        getLogindetails.enqueue(new Callback<MainModel>() {
             @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+            public void onResponse(Call<MainModel> call, Response<MainModel> response) {
 
                 if (response.isSuccessful()) {
 
                     try {
-                        JSONObject jsonObject = new JSONObject(response.body().string());
-                        onFinishedListener.onFinished(jsonObject);
-                    } catch (IOException | JSONException e) {
+                     //   JSONObject jsonObject = new JSONObject(response.body());
+                        onFinishedListener.onFinished(response.body());
+                    } catch (Exception e) {
                         e.printStackTrace();
 
                     }
@@ -44,7 +45,7 @@ public class LoginModel implements LoginContract.model {
             }
 
             @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
+            public void onFailure(Call<MainModel> call, Throwable t) {
                 Log.e(TAG, t.toString());
                 onFinishedListener.onFailure(t);
             }
