@@ -15,7 +15,7 @@ import android.view.View;
 
 import com.plasticupdates.Adapter.ViewPagerAdapter;
 import com.plasticupdates.activity.ChangePasswordActivity;
-import com.plasticupdates.activity.EditProfileActivity;
+import com.plasticupdates.activity.profile.EditProfileActivity;
 import com.plasticupdates.activity.GlobalNewsDetailActivity;
 import com.plasticupdates.databinding.ActivityMainBinding;
 

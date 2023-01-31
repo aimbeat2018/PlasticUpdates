@@ -5,13 +5,18 @@
 
     <data>
         <variable
-            name="handler"
-            type="com.plasticupdates.activity.EditProfileActivity" />
+            name="presenter"
+            type="com.plasticupdates.activity.profile.ProfileContract.Presenter" />
+
+        <variable
+            name="viewModel"
+            type="com.plasticupdates.model.LoginRequestModel" />
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:context=".activity.profile.EditProfileActivity"
         >
         <RelativeLayout
             android:id="@+id/rr_banner"
@@ -751,6 +756,7 @@
                         android:layout_marginTop="@dimen/margin_20"
                         android:layout_marginLeft="@dimen/margin_25"
                         android:layout_marginRight="@dimen/margin_25"
+                        android:onClick="saveProfileData"
                         ></androidx.appcompat.widget.AppCompatButton>
 
                 </LinearLayout>

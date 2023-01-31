@@ -32,7 +32,16 @@ public interface ApiInterface {
                                  @Field("phone") String phone,@Field("cname") String cname,
                                  @Field("cphone") String cphone,@Field("caddress") String caddress,
                                  @Field("country") String country,@Field("state") String state,@Field("city") String city);
-
+    @FormUrlEncoded
+    @POST("register")
+    Call<ResponseBody> updateuser(@Header("x-api-key") String ApiKey,
+                                 @Field("user_id") String userid,@Field("firstname") String firstname,
+                                 @Field("lastname") String lastname,@Field("c_name") String c_name,
+                                 @Field("c_phone") String c_phone,@Field("c_address") String c_address,
+                                 @Field("country") String country,@Field("state") String state,
+                                 @Field("city") String city,@Field("department") String department,
+                                  @Field("job_function") String job_function, @Field("yearly_turnover") String yearly_turnover,
+                                  @Field("company_category") String company_category);
 
 
 }
